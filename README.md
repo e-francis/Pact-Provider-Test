@@ -31,13 +31,7 @@ To start using Pact Provider Test, follow these steps:
 7. Publish the generated Pact contract files to a Pact Broker (optional) for sharing with consumers (clients) of your API. This step is recommended if you have multiple consumers that need to validate their interactions with the provider.
 
 ## Configuration
-Pact Provider Test provides a configuration file (`pact-provider-test.yml`) that you can update to configure various settings for your provider tests. The following configuration options are available:
-
-- `provider_name`: The name of your provider API. This will be used as the provider name in the generated Pact contract files.
-- `provider_base_url`: The base URL of your provider API. This is the URL that will be used by the tests to send requests to the provider.
-- `output_dir`: The directory where the generated Pact contract files will be stored.
-- `pact_broker`: (Optional) The details of the Pact Broker that you want to publish the generated Pact contract files to. This includes the URL of the Pact Broker and the authentication credentials (if required).
-- `log_level`: The logging level for test execution. You can set it to `debug`, `info`, `warn`, or `error` depending on your desired level of verbosity.
+Pact Consumer Test provides a configuration file (`pom.xml`) that you can update to configure various settings for your consumer tests.
 
 ## Writing Tests
-Pact Provider Test uses your chosen test framework or library for writing the tests. You need to define the expected interactions with the provider API in your tests, which will
+Pact Consumer Test uses JUnit5 framework or library for writing the tests.
